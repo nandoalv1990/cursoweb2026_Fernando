@@ -29,6 +29,8 @@
 
             <a href="#contacto">Contacto</a>
 
+            <a href="#videos">Videos</a>
+
         </nav>
 
     </header>
@@ -107,29 +109,26 @@
         <div class = "contenedor-videos">
             <!--OPCION 1 -->
             <div class="tarjeta-video">
-                Video local
                 <video controls width="100%" poster="https://via.placeholder.com/600x350?text=Haz+clic+para+reproducir">
                     <source src="video 1" type="video/mp4">
                     <source src="video 2" type="video/webm">
                     Tu navegador no soporta el reproductor de video
                 </video>
                 <p><small>Video reproducido localmente</small></p>
-            </div>
-            <!--OPCION 2-->
-            <div class="tarjeta-video2">
-                Video embebido
-                <div class = "video-responsive">
-                    <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/watch?v=jNQXAC9IVRw"
-                    title="Reproductor de youtube"
-                    frameborder="0"
-                    allow="äccelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    ></iframe>
+                <!--Local-->
+                <video id="miVideo" width="100%">
+                    <source src="mi-video.mp4" type="video/mp4">
+                </video>
+                <div class = "controles-custom">
+                    <button onclick=""
                 </div>
             </div>
+            <!--OPCION 2-->
+            <div class="tarjeta-video">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Bj6_Wd3s4Ds?si=_4rT6epgQCt02UzD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p><small>Video embebido</small></p>
+
         </div>
     </section>
 
