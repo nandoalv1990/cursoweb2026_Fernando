@@ -81,7 +81,7 @@ footer {
     display: list-item;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 4px;
 }
 
 .tarjeta-video {
