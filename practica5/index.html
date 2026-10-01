@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title>Mi primer contador</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 80px;
+            color: red;
+            margin: 10px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <head>
+        <body>
+            <h2>Haz clic para contar!</h2>
+            <h1 id="numero">0</h1>
+            <button onclick="sumar()">Contar +1</button>
+            <!--PROGRAMACION-->
+            <script>
+                let contador = 0;
+                function sumar() {
+                    contador = contador + 1;
+                    document.getElementById('numero').textContent = contador;
+                }
+            </script>
+        </body>
+    </head>
+</html>
