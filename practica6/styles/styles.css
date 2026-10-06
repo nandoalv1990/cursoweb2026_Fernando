@@ -1,0 +1,129 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+}
+
+/* Header fijo */
+.header {
+    background-color: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #19c628;
+    text-decoration: none;
+}
+
+/* Menú de escritorio */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #38bdf8;
+}
+
+/* Botón hamburguesa (Oculto en escritorio) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 0;
+    background-color: #f8fafc;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Contenido principal */
+.contenido {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.contenido h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #0f172a;
+}
+
+/*DISPOSITIVOS MÓVILES (<768px) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Muestra el botón hamburguesa */
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%; /* Oculta el menú fuera de la pantalla a la izquierda */
+        top: 60px;
+        flex-direction: column;
+        background-color: #0f172a;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        padding: 2rem 0;
+        gap: 1.5rem;
+    }
+
+    /* Clase activa agregada con JavaScript para desplegar el menú */
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* Animación del botón hamburguesa a una X al estar activo */
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
