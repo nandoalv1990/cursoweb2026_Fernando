@@ -1,0 +1,27 @@
+<div class="card">
+  <h2>Crear Cuenta</h2>
+  <form id="form-registro">
+    <div class="form-group">
+      <label>Nombre Completo:</label>
+      <input type="text" id="reg-nombre" required>
+    </div>
+    <div class="form-group">
+      <label>Correo Electrónico:</label>
+      <input type="email" id="reg-email" required>
+    </div>
+    <div class="form-group">
+      <label>Contraseña:</label>
+      <input type="password" id="reg-password" required>
+    </div>
+    <div class="form-group">
+      <label>Rol:</label>
+      <select id="reg-rol">
+        <option value="2">Cliente</option>
+        <option value="3">Soporte</option>
+        <option value="1">Administrador</option>
+      </select>
+    </div>
+    <button type="submit" class="btn-gplus">Registrarme</button>
+  </form>
+  <p id="reg-msg" style="margin-top: 15px;"></p>
+</div>

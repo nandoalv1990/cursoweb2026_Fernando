@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Plataforma Web - Google+ Style</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- Encabezado Estilo Google+ -->
+  <header class="gplus-header">
+    <div class="logo">Google<span>+</span> DB Manager</div>
+    <nav id="nav-user">
+      <span id="user-display">Invitado</span>
+      <button id="btn-logout" class="btn-gplus hidden">Cerrar Sesión</button>
+    </nav>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <div class="main-container">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#" onclick="cargarVista('login')">🔑 Iniciar Sesión</a></li>
+        <li><a href="#" onclick="cargarVista('registro')">👤 Registrarse</a></li>
+        <li><a href="#" onclick="cargarVista('dashboard')">📊 Panel / Perfil</a></li>
+      </ul>
+    </aside>
+
+    <main id="app-view" class="content-area">
+      <!-- Aquí se cargan dinámicamente las vistas -->
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
