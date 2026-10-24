@@ -3,7 +3,7 @@
   <form id="form-login">
     <div class="form-group">
       <label>Correo Electrónico:</label>
-      <input type="email" id="login-email" required placeholder="ejemplo@web.com">
+      <input type="email" id="login-email" required placeholder="ana@web.com">
     </div>
     <div class="form-group">
       <label>Contraseña:</label>
@@ -12,4 +12,15 @@
     <button type="submit" class="btn-gplus">Ingresar</button>
   </form>
   <p id="login-msg" style="margin-top: 15px;"></p>
+
+  <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ddd;">
+
+  <!-- Botón de Asistente de Inicialización BD -->
+  <div style="text-align: center;">
+    <p style="font-size: 12px; color: #666;">¿Es la primera vez que ejecutas el proyecto?</p>
+    <button id="btn-init-db" class="btn-gplus" style="background-color: #4285f4;">
+      🛠️ Inicializar Base de Datos en PostgreSQL
+    </button>
+    <p id="db-init-msg" style="margin-top: 10px; font-size: 13px;"></p>
+  </div>
 </div>

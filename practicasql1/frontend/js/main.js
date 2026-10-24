@@ -98,6 +98,33 @@ document.getElementById('btn-logout').addEventListener('click', () => {
   cargarVista('login');
 });
 
-// Cargar Login por defecto al iniciar
 cargarVista('login');
 actualizarHeader();
+
+function asociarEventoLogin() {
+
+  const btnInit = document.getElementById('btn-init-db');
+  if (btnInit) {
+    btnInit.addEventListener('click', async () => {
+      const msg = document.getElementById('db-init-msg');
+      msg.style.color = '#333';
+      msg.textContent = 'Creando base de datos y tablas... Por favor espera.';
+
+      try {
+        const res = await fetch(`${API_URL}/setup-db`, { method: 'POST' });
+        const data = await res.json();
+
+        if (data.exito) {
+          msg.style.color = 'green';
+          msg.textContent = '✅ ¡Base de datos instalada y lista para usarse!';
+        } else {
+          msg.style.color = 'red';
+          msg.textContent = '❌ Error: ' + data.mensaje;
+        }
+      } catch (err) {
+        msg.style.color = 'red';
+        msg.textContent = '❌ No se pudo conectar con el servidor backend.';
+      }
+    });
+  }
+}
