@@ -1,51 +1,122 @@
 <!DOCTYPE html>
-<html lang="=es">
+<html lang="es">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook - Iniciar sesión o registrarse</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <head>
-        <body>
-            <main class="main-container">
-                <div class="content-wrapper">
+</head>
+<body>
 
-                    <section class="brand-section">
-                        <h1 class="facebook-logo">facebook</h1>
-                        <p class="brand-tagline">
-                            Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida
-                        </p>
-                    </section>
-                    
-                    <section class="login-section">
-                        <div class="login-card">
-                            <form id="login-form">
-                                <div class="input-group">
-                                    <input
-                                    type="text"
-                                    id="email"
-                                    placeholder="Correo electrónico o número de teléfono"
-                                    required>
-                                </div>
-                                <div class="input-group">
-                                <input
-                                type="password"
-                                id="password"
-                                placeholder="Contraseña"
-                                required>
-                                </div>
-                                <button type="submit" class="btn-login">Iniciar sesión</button>
-                            </form>
-                            <div class="forgot-password">
-                                <a href="#">Olvidaste tu contraseña?</a>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="create-account-container">
-                                <button type="button" class="btn-create" id="btn-create-account">Crear cuenta nueva</button>
-                            </div>
+    <main class="main-container">
+        <div class="content-wrapper">
+            
+            <section class="brand-section">
+                <h1 class="facebook-logo">facebook</h1>
+                <p class="brand-tagline">
+                    Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.
+                </p>
+            </section>
+
+            <section class="login-section">
+                <div class="login-card">
+                    <form id="login-form">
+                        <div class="input-group">
+                            <input 
+                                type="text" 
+                                id="email" 
+                                placeholder="Correo electrónico o número de teléfono" 
+                                required
+                            >
                         </div>
-                    </section>
+                        <div class="input-group">
+                            <input 
+                                type="password" 
+                                id="password" 
+                                placeholder="Contraseña" 
+                                required
+                            >
+                        </div>
+                        <button type="submit" class="btn-login">Iniciar sesión</button>
+                    </form>
+
+                    <div class="forgot-password">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="create-account-container">
+                        <button type="button" class="btn-create" id="btn-create-account">
+                            Crear cuenta nueva
+                        </button>
+                    </div>
                 </div>
-            </main>
-        </body>
-    </head>
+
+                <div class="business-link">
+                    <a href="#"><strong>Crea una página</strong></a> para una celebridad, una marca o un negocio.
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Selector de Idiomas -->
+            <ul class="languages-list">
+                <li>Español (España)</li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><a href="#">Italiano</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Català</a></li>
+                <li><a href="#">Galego</a></li>
+                <li><a href="#">Euskara</a></li>
+                <li><button class="add-lang-btn">+</button></li>
+            </ul>
+
+            <div class="footer-divider"></div>
+            <ul class="links-list">
+                <li><a href="#">Registrarte</a></li>
+                <li><a href="#">Iniciar sesión</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Lugares</a></li>
+                <li><a href="#">Juegos</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Meta Pay</a></li>
+                <li><a href="#">Meta Store</a></li>
+                <li><a href="#">Meta Quest</a></li>
+                <li><a href="#">Imagine with Meta AI</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Threads</a></li>
+                <li><a href="#">Recaudaciones de fondos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Centro de información de votación</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Centro de privacidad</a></li>
+                <li><a href="#">Grupos</a></li>
+                <li><a href="#">Información</a></li>
+                <li><a href="#">Crear anuncio</a></li>
+                <li><a href="#">Crear página</a></li>
+                <li><a href="#">Desarrolladores</a></li>
+                <li><a href="#">Empleo</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Opciones de anuncios</a></li>
+                <li><a href="#">Condiciones</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Subir contactos y no usuarios</a></li>
+            </ul>
+
+            <div class="copyright">
+                Meta © 2026
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
 </html>
