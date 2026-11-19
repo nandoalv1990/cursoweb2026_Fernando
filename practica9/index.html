@@ -3,54 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Monedas</title>
+    <title>Conversor de Monedas 💱</title>
     <link rel="stylesheet" href="">
 </head>
 <body>
+
     <main class="contenedor">
         <div class="tarjeta-conversor">
             <h1>Conversor de Divisas</h1>
             <p class="subtitulo">Calcula el tipo de cambio al instante</p>
 
+            <!-- Entrada de cantidad -->
             <div class="grupo-campo">
                 <label for="cantidad">Cantidad a convertir:</label>
-                <input type="number" 
-                id="cantidad" 
-                value="100" 
-                min="0" 
-                step="any" 
-                placeholder="0.00">
+                <input type="number" id="cantidad" value="1" min="0" step="any" placeholder="0.00">
             </div>
 
+            <!-- Selección de monedas -->
             <div class="fila-monedas">
                 <div class="grupo-campo">
-                    <label for="moneda-origen"> De: </label>
-                    <select name="" id="moneda-origen">
-                        <option value="MXN" selected> MXN - Peso Mexicano</option>
-                        <opcion value="USD">USD - Dólar estadounidense</opcion>
+                    <label for="moneda-origen">De:</label>
+                    <select id="moneda-origen">
+                        <option value="MXN" selected>🇲🇽 MXN - Peso Mexicano</option>
+                        <option value="USD">🇺🇸 USD - Dólar Estadounidense</option>
+                        <option value="EUR">🇪🇺 EUR - Euro</option>
+                        <option value="COP">🇨🇴 COP - Peso Colombiano</option>
+                        <option value="ARS">🇦🇷 ARS - Peso Argentino</option>
+                        <option value="JPY">🇯🇵 JPY - Yen Japonés</option>
+                    </select>
+                </div>
+
+                <!-- Botón para invertir monedas -->
+                <button type="button" id="btn-invertir" class="btn-invertir" title="Invertir monedas">CONVERTIR</button>
+
+                <div class="grupo-campo">
+                    <label for="moneda-destino">A:</label>
+                    <select id="moneda-destino">
+                        <option value="MXN">🇲🇽 MXN - Peso Mexicano</option>
+                        <option value="USD" selected>🇺🇸 USD - Dólar Estadounidense</option>
+                        <option value="EUR">🇪🇺 EUR - Euro</option>
+                        <option value="COP">🇨🇴 COP - Peso Colombiano</option>
+                        <option value="ARS">🇦🇷 ARS - Peso Argentino</option>
+                        <option value="JPY">🇯🇵 JPY - Yen Japonés</option>
                     </select>
                 </div>
             </div>
 
-            <button type="button" 
-            id="btn-invertir" 
-            class="btn-invertir" 
-            title="Invertir monedas"> Convertir 
-            </button>
-
-            <div class="grupo-campo">
-                    <label for="moneda-destino"> A: </label>
-                    <select name="" id="moneda-destino">
-                        <option value="MXN"> MXN - Peso Mexicano</option>
-                        <opcion value="USD" selected>USD - Dólar estadounidense</opcion>
-                    </select>
-                </div>
-        </div>
-        <div class="caja-resultado">
-            <p id="tasa-info" class="tasa-info">1 MXN = 0.05 USD</p>
-            <h2 id="resultado">$1.00 USD</h2>
+            <!-- Caja de Resultado -->
+            <div class="caja-resultado">
+                <p id="tasa-info" class="tasa-info">1 MXN = 0.0500 USD</p>
+                <h2 id="resultado">$5.00 USD</h2>
+            </div>
         </div>
     </main>
+
     <script src="./js/script.js"></script>
 </body>
 </html>

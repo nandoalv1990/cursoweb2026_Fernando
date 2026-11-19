@@ -8,7 +8,10 @@ const textoResultado = document.getElementById('resultado');
 const tasasRespectUSD = {
     USD: 1.00,
     MXN: 20.00,
-    EUR: 0.91
+    EUR: 0.91,
+    COP: 4350.00,
+    ARS: 1000.00,
+    JPY: 154.00
 }
 
 function calcularConverion() {
@@ -18,9 +21,10 @@ function calcularConverion() {
 
     if (isNaN(cantidad) || cantidad < 0){
         textoResultado.textContent = "Ingresa una cantidad valida";
-        textoTasa.textContent = "---ERROR---";
+        textoTasa.textContent = "---";
         return;
-        }
+    }
+    
         const enDolares = cantidad / tasasRespectUSD[origen];
         const resultadoFinal = enDolares * tasasRespectUSD[destino];
         const tasaUnitaria = (1/tasasRespectUSD[origen] * tasasRespectUSD[destino]);
@@ -32,9 +36,9 @@ function calcularConverion() {
             maximumFractionDigits:2
         })
 
-        textoTasa.textContent = '1 ${origen} = ${tasaUnitaria.toFixed(4) ${destino}';
+        textoTasa.textContent = `1 ${origen} = ${tasaUnitaria.toFixed(4)} ${destino}`;
         textoResultado.textContent = formateador.format(resultadoFinal);
-    }
+}
 function invertirMonedas(){
     const temporal = selectOrigen.value;
     selectOrigen.value = selectDestino.value;
