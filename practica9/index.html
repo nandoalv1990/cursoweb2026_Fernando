@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <main class="contenedor">
+        <div class="tarjeta-conversor">
+            <h1>Conversor de Divisas</h1>
+            <p class="subtitulo">Calcula el tipo de cambio al instante</p>
+
+            <div class="grupo-campo">
+                <label for="cantidad">Cantidad a convertir:</label>
+                <input type="number" 
+                id="cantidad" 
+                value="100" 
+                min="0" 
+                step="any" 
+                placeholder="0.00">
+            </div>
+
+            <div class="fila-monedas">
+                <div class="grupo-campo">
+                    <label for="moneda-origen"> De: </label>
+                    <select name="" id="moneda-origen">
+                        <option value="MXN" selected> MXN - Peso Mexicano</option>
+                        <opcion value="USD">USD - Dólar estadounidense</opcion>
+                    </select>
+                </div>
+            </div>
+
+            <button type="button" 
+            id="btn-invertir" 
+            class="btn-invertir" 
+            title="Invertir monedas"> Convertir 
+            </button>
+
+            <div class="grupo-campo">
+                    <label for="moneda-destino"> A: </label>
+                    <select name="" id="moneda-destino">
+                        <option value="MXN"> MXN - Peso Mexicano</option>
+                        <opcion value="USD" selected>USD - Dólar estadounidense</opcion>
+                    </select>
+                </div>
+        </div>
+        <div class="caja-resultado">
+            <p id="tasa-info" class="tasa-info">1 MXN = 0.05 USD</p>
+            <h2 id="resultado">$1.00 USD</h2>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>

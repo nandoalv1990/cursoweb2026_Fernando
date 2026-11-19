@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Iniciar sesión</title>
+
+    <!-- Conectar hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="page">
+
+        <section class="login-area">
+
+            <div class="login-card">
+
+                <h1 class="logo">Instagram</h1>
+
+                <!-- Formulario de inicio de sesión -->
+                <form class="login-form"
+                    onsubmit="event.preventDefault(); alert('Maqueta educativa: no se envían datos.');">
+
+                    <input
+                        type="text"
+                        placeholder="Teléfono, usuario o correo electrónico"
+                        autocomplete="off"
+                    >
+
+                    <input
+                        type="password"
+                        placeholder="Contraseña"
+                        autocomplete="new-password"
+                    >
+
+                    <button type="submit" class="login-button">
+                        Iniciar sesión
+                    </button>
+
+                </form>
+
+                <!-- Separador -->
+                <div class="separator">
+                    <span></span>
+                    <b>O</b>
+                    <span></span>
+                </div>
+
+                <a href="#" class="facebook-login">
+                    <span class="facebook-icon">f</span>
+                    Iniciar sesión con Facebook
+                </a>
+
+                <a href="#" class="forgot-link">
+                    ¿Olvidaste tu contraseña?
+                </a>
+
+            </div>
+
+            <!-- Registro -->
+            <div class="signup-card">
+                ¿No tienes una cuenta?
+                <a href="#">Regístrate</a>
+            </div>
+
+            <p class="app-label">Descarga la aplicación.</p>
+
+            <!-- Tiendas -->
+            <div class="store-links">
+
+                <a href="#">
+                    <span class="store-symbol">▶</span>
+                    <span>
+                        <small>DISPONIBLE EN</small>
+                        <strong>Google Play</strong>
+                    </span>
+                </a>
+
+                <a href="#">
+                    <span class="windows-symbol">▦</span>
+                    <span>
+                        <small>Consíguelo en</small>
+                        <strong>Microsoft Store</strong>
+                    </span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+
+        <nav>
+            <a href="#">Meta</a>
+            <a href="#">Información</a>
+            <a href="#">Blog</a>
+            <a href="#">Empleo</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Condiciones</a>
+            <a href="#">Ubicaciones</a>
+        </nav>
+
+        <p>© 2026 Instagram - Maqueta educativa</p>
+
+    </footer>
+
+</body>
+</html>

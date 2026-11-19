@@ -1,0 +1,287 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #fafafa;
+    color: #262626;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.page {
+    min-height: calc(100vh - 105px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 16px 24px;
+}
+
+.login-area {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* TARJETA DE LOGIN */
+
+.login-card,
+.signup-card {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+}
+
+.login-card {
+    padding: 34px 39px 25px;
+}
+
+/* LOGOTIPO */
+
+.logo {
+    margin-bottom: 34px;
+
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+/* FORMULARIO */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.login-form input {
+    width: 100%;
+    height: 38px;
+
+    padding: 9px 8px;
+
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+
+    background: #fafafa;
+    color: #262626;
+
+    font-size: 12px;
+    outline: none;
+}
+
+.login-form input:focus {
+    border-color: #a8a8a8;
+}
+
+/* BOTÓN */
+
+.login-button {
+    height: 32px;
+    margin-top: 8px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #4cb5f9;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #0095f6;
+}
+
+/* SEPARADOR */
+
+.separator {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin: 21px 0;
+
+    color: #737373;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.separator span {
+    height: 1px;
+    flex: 1;
+    background: #dbdbdb;
+}
+
+/* FACEBOOK */
+
+.facebook-login {
+    display: block;
+    margin-bottom: 19px;
+
+    color: #385185;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.facebook-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+
+    margin-right: 6px;
+
+    border-radius: 2px;
+    background: #385185;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* RECUPERAR CONTRASEÑA */
+
+.forgot-link {
+    display: block;
+
+    color: #00376b;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* REGISTRO */
+
+.signup-card {
+    margin-top: 10px;
+    padding: 22px 10px;
+}
+
+.signup-card a {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* APLICACIONES */
+
+.app-label {
+    margin: 20px 0;
+}
+
+.store-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.store-links a {
+    min-height: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+    background: #111;
+    color: white;
+
+    text-align: left;
+    text-decoration: none;
+}
+
+.store-links small,
+.store-links strong {
+    display: block;
+}
+
+.store-links small {
+    font-size: 8px;
+}
+
+.store-links strong {
+    font-size: 13px;
+}
+
+.store-symbol,
+.windows-symbol {
+    font-size: 22px;
+}
+
+/* PIE DE PÁGINA */
+
+.footer {
+    padding: 15px 20px 25px;
+
+    color: #737373;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 12px 18px;
+    margin-bottom: 18px;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 450px) {
+
+    body {
+        background: white;
+    }
+
+    .page {
+        min-height: auto;
+        padding: 20px 0;
+    }
+
+    .login-card,
+    .signup-card {
+        border-left: none;
+        border-right: none;
+    }
+
+    .login-card {
+        padding: 34px 28px 25px;
+    }
+
+    .signup-card {
+        margin-top: 0;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
+}
